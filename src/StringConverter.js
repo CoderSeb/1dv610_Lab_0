@@ -14,3 +14,5 @@ class StringConverter {
   }
 
 }
+
+export default StringConverter
