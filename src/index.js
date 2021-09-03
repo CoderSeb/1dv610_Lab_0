@@ -12,5 +12,6 @@ const stringConverter = new StringConverter()
 rl.question('What\'s your name?\n', (answer) => {
   console.log(`Welcome ${answer}!`)
   stringConverter.setName(answer)
+  console.log(`Your name in hexadecimal notation is: ${stringConverter.getHex()}`)
   rl.close()
 })
