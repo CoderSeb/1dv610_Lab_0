@@ -13,5 +13,6 @@ rl.question('What\'s your name?\n', (answer) => {
   console.log(`Welcome ${answer}!`)
   stringConverter.setName(answer)
   console.log(`Your name in hexadecimal notation is: ${stringConverter.getHex()}`)
+  console.log(`Your name in binary is: ${stringConverter.getBinary()}`)
   rl.close()
 })

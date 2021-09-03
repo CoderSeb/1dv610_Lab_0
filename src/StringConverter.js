@@ -21,6 +21,15 @@ class StringConverter {
     }
     return hexArray.join('')
   }
+
+  getBinary() {
+    const letters = this.#theName.split('')
+    const binaryArray = []
+    letters.map(character => {
+      binaryArray.push(character.charCodeAt(0).toString(2))
+    })
+    return binaryArray.join(' ')
+  }
 }
 
 export default StringConverter
